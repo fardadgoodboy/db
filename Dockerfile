@@ -1,3 +1,4 @@
+# استفاده از ایماژ سبک Alpine
 FROM alpine:latest
 
 # نصب وردیابی و unzip
@@ -9,5 +10,5 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v0.22.4/pock
 # اکسترکت فایل
 RUN unzip pocketbase_0.22.4_linux_amd64.zip
 
-# اجرای PocketBase
-CMD ["./pocketbase", "serve", "--http=0.0.0.0:8090"]
+# اجرای PocketBase روی پورت ۸۰۸۰
+CMD ["./pocketbase", "serve", "--http=0.0.0.0:8080"]
